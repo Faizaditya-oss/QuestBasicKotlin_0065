@@ -113,5 +113,44 @@ when (gradeResult) {
     "C" -> println("Grade C: Cukup")
     else -> println("Grade tidak diketahui")
 }
+
+println()
+println("=== RANGES ===")
+
+print("1..4: ")
+for (number in 1..4) {
+    print("$number ")
+}
+println()
+
+print("1..<4: ")
+for (number in 1..<4) {
+    print("$number ")
+}
+println()
+
+print("4 downTo 1: ")
+for (number in 4 downTo 1) {
+    print("$number ")
+}
+println()
+
+print("1..5 step 2: ")
+for (number in 1..5 step 2) {
+    print("$number ")
+}
+println()
+
+print("'a'..'d': ")
+for (letter in 'a'..'d') {
+    print("$letter ")
+}
+println()
+
+print("'z' downTo 's' step 2: ")
+for (letter in 'z' downTo 's' step 2) {
+    print("$letter ")
+}
+println()
 }
 
