@@ -152,5 +152,36 @@ for (letter in 'z' downTo 's' step 2) {
     print("$letter ")
 }
 println()
+
+    println()
+    println("=== LOOPS ===")
+
+    // For loop
+    println("For loop:")
+    for (number in 1..5) {
+        print("$number ")
+    }
+    println()
+
+    // While loop
+    println("While loop:")
+    var counter = 1
+
+    while (counter <= 5) {
+        print("$counter ")
+        counter++
+    }
+    println()
+
+    // Do-while loop
+    println("Do-while loop:")
+    var number = 1
+
+    do {
+        print("$number ")
+        number++
+    } while (number <= 5)
+
+    println()
 }
 
