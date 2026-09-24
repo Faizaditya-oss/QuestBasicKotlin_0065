@@ -214,5 +214,13 @@ println()
 
     // Function tanpa return
     printMessage("Ini adalah function tanpa return")
+
+        println()
+    println("=== LAMBDA EXPRESSIONS ===")
+
+    // Lambda expression
+    val sumLambda = { x: Int, y: Int -> x + y }
+
+    println("Hasil lambda: ${sumLambda(10, 20)}")
 }
 
