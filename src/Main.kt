@@ -89,5 +89,29 @@ fun main() {
     println("Harga apple juice: ${juiceMenu["apple"]}")
     println("Jumlah menu: ${juiceMenu.count()}")
     println("Apakah apple tersedia? ${juiceMenu.containsKey("apple")}")
+
+    println()
+println("=== CONDITIONAL EXPRESSIONS ===")
+
+// If expression
+val score = 85
+
+if (score >= 75) {
+    println("Nilai: $score")
+    println("Keterangan: Lulus")
+} else {
+    println("Nilai: $score")
+    println("Keterangan: Tidak Lulus")
+}
+
+// When expression
+val gradeResult = "A"
+
+when (gradeResult) {
+    "A" -> println("Grade A: Sangat Baik")
+    "B" -> println("Grade B: Baik")
+    "C" -> println("Grade C: Cukup")
+    else -> println("Grade tidak diketahui")
+}
 }
 
