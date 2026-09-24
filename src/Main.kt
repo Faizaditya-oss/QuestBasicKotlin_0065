@@ -1,3 +1,15 @@
+fun sum(x: Int, y: Int): Int {
+    return x + y
+}
+
+fun printMessageWithPrefix(message: String, prefix: String = "Info") {
+    println("[$prefix] $message")
+}
+
+fun printMessage(message: String) {
+    println(message)
+}
+
 fun main() {
 
     println("=== BASIC KOTLIN ===")
@@ -183,5 +195,24 @@ println()
     } while (number <= 5)
 
     println()
+
+        println()
+    println("=== FUNCTIONS ===")
+
+    // Function dengan parameter dan return
+    val result = sum(10, 20)
+    println("Hasil sum(10, 20): $result")
+
+    // Named arguments
+    printMessageWithPrefix(
+        prefix = "Log",
+        message = "Belajar Kotlin"
+    )
+
+    // Default parameter
+    printMessageWithPrefix("Hello")
+
+    // Function tanpa return
+    printMessage("Ini adalah function tanpa return")
 }
 
