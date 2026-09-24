@@ -1,3 +1,12 @@
+class Customer(
+    val name: String,
+    var age: Int
+) {
+    fun introduce() {
+        println("Nama: $name, Umur: $age")
+    }
+}
+
 fun sum(x: Int, y: Int): Int {
     return x + y
 }
@@ -222,5 +231,21 @@ println()
     val sumLambda = { x: Int, y: Int -> x + y }
 
     println("Hasil lambda: ${sumLambda(10, 20)}")
+
+        println()
+    println("=== CLASS ===")
+
+    // Membuat instance dari class Customer
+    val customer = Customer("Faiz", 20)
+
+    println("Nama customer: ${customer.name}")
+    println("Umur customer: ${customer.age}")
+
+    // Memanggil member function
+    customer.introduce()
+
+    // Mengubah property yang menggunakan var
+    customer.age = 21
+    println("Umur setelah diubah: ${customer.age}")
 }
 
