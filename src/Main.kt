@@ -1,3 +1,8 @@
+data class User(
+    val name: String,
+    val age: Int
+)
+
 class Customer(
     val name: String,
     var age: Int
@@ -247,5 +252,22 @@ println()
     // Mengubah property yang menggunakan var
     customer.age = 21
     println("Umur setelah diubah: ${customer.age}")
+
+        println()
+    println("=== DATA CLASSES ===")
+
+    // Membuat object data class
+    val user1 = User("Faiz", 20)
+    val user2 = User("Faiz", 20)
+
+    // toString()
+    println("User 1: $user1")
+
+    // Membandingkan object
+    println("user1 == user2: ${user1 == user2}")
+
+    // copy()
+    val user3 = user1.copy(age = 21)
+    println("User 3: $user3")
 }
 
