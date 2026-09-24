@@ -269,5 +269,23 @@ println()
     // copy()
     val user3 = user1.copy(age = 21)
     println("User 3: $user3")
+
+    println()
+println("=== NULL SAFETY ===")
+
+// Nullable type
+var nullableName: String? = "Faiz"
+println("Nama: $nullableName")
+
+// Mengubah nilai menjadi null
+nullableName = null
+println("Nama setelah menjadi null: $nullableName")
+
+// Safe call operator
+println("Panjang nama: ${nullableName?.length}")
+
+// Elvis operator
+val displayName = nullableName ?: "Nama tidak tersedia"
+println("Display name: $displayName")
 }
 
